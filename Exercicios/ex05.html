@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM</title>
+  </head>
+  <style>
+    body {
+      background-color: rgb(61, 61, 61);
+    }
+    div#area {
+      background-color: white;
+      color: black;
+      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      width: 200px;
+      height: 200px;
+      line-height: 200px;
+      text-align: center;
+      font-size: 16pt;
+    }
+  </style>
+  <body>
+    <div>Clique em mim!</div>
+
+    <!-- Marcadores dentro do HTML
+    <div
+      id="area"
+      onclick="clicar()"
+      onmouseenter="entrou()"
+      onmouseout="saiu()"
+    >
+      Clique em mim!
+    </div>
+  -->
+
+    <script>
+      area.addEventListener("click", area);
+      dentro.addEventListener("mouseenter", dentro);
+      fora.addEventListener("mouseout", fora);
+
+      function clicar() {
+        var area = window.document.getElementById("area");
+        area.innerText = "Você clicou!";
+
+        area.style.background = "blue";
+      }
+
+      function entrou() {
+        var dentro = window.document.getElementById("area");
+        dentro.innerText = "Ta dentro";
+      }
+
+      function saiu() {
+        var fora = window.document.getElementById("area");
+        fora.innerText = "Ta fora";
+
+        fora.style.background = "white";
+      }
+    </script>
+  </body>
+</html>
