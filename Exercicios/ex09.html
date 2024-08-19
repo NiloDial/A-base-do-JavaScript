@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM - Velocidade</title>
+  </head>
+  <style></style>
+  <body>
+    <h1>Digite a velocidade do veículo</h1>
+    <input type="number" name="num1" id="num1" />
+    <input type="button" value="somar" onclick="vel()" />
+    <div id="velo">Velocidade:</div>
+    <div id="res">Resultado:</div>
+
+    <script>
+      function vel() {
+        var n1 = window.document.getElementById("num1");
+        var res = window.document.getElementById("res");
+        var velo = window.document.getElementById("velo");
+        var va1 = Number(n1.value);
+
+        velo.innerHTML = `Sua velocidade é de <strong>${va1}KM/H.</strong>`;
+
+        if (va1 >= 60) {
+          res.innerHTML = `MULTADO! Você passou do limite de velocidade.`;
+        } else {
+          res.innerHTML = `BOA VIAGEM, sempre use cinto de sugurança.`;
+        }
+      }
+    </script>
+  </body>
+</html>
