@@ -1,4 +1,4 @@
-//Condição simples
+//CONDIÇÃO SIMPLES
 
 var vel = 55;
 

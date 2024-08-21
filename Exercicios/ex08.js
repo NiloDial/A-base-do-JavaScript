@@ -1,4 +1,4 @@
-//Condição composta
+//CONDIÇÃO COMPOSTA
 
 var vel = 55;
 

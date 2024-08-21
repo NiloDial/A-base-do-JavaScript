@@ -7,6 +7,8 @@
   </head>
   <style></style>
   <body>
+    <!-- HTML com título e inputs da página -->
+
     <h1>Somando valores</h1>
     <input type="number" name="num1" id="num1" /> +
     <input type="number" name="num2" id="num2" />
@@ -14,6 +16,8 @@
     <div id="res">Resultado:</div>
 
     <script>
+      //Função "somar" que é executada quando o user aperta o botão
+
       function somar() {
         var n1 = window.document.getElementById("num1");
         var n2 = window.document.getElementById("num2");
@@ -21,6 +25,8 @@
         var va1 = Number(n1.value);
         var va2 = Number(n2.value);
         var s = va1 + va2;
+
+        //.innerHTML responsável por substituir o texto da div com id "res"
 
         res.innerHTML = `A soma de ${va1} + ${va2} é igual a ${s}`;
       }

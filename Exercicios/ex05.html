@@ -6,6 +6,8 @@
     <title>DOM</title>
   </head>
   <style>
+    /* CSS - estilização do projeto */
+
     body {
       background-color: rgb(61, 61, 61);
     }
@@ -21,9 +23,10 @@
     }
   </style>
   <body>
-    <div>Clique em mim!</div>
+    <!-- HTML - div com texto dentro -->
 
-    <!-- Marcadores dentro do HTML
+    <!-- Marcadores dentro do HTML -->
+
     <div
       id="area"
       onclick="clicar()"
@@ -32,12 +35,18 @@
     >
       Clique em mim!
     </div>
-  -->
 
     <script>
+      /*
+      .addEventListener responsável por aguardar um evento acontecer.
+      Nesse caso usamos os eventos na div(id-area), de click, mouse dentro e mouse fora.
+      */
+
       area.addEventListener("click", area);
       dentro.addEventListener("mouseenter", dentro);
       fora.addEventListener("mouseout", fora);
+
+      // Função "clicar" que é executada quando o user clica na div
 
       function clicar() {
         var area = window.document.getElementById("area");
@@ -46,10 +55,14 @@
         area.style.background = "blue";
       }
 
+      // Função "entrou" que é executada quando o user coloca o mouse na div
+
       function entrou() {
         var dentro = window.document.getElementById("area");
         dentro.innerText = "Ta dentro";
       }
+
+      // Função "saiu" que é executada quando o user tira o mouse da div
 
       function saiu() {
         var fora = window.document.getElementById("area");

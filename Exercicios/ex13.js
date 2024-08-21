@@ -1,4 +1,6 @@
-//Condição múltipla
+//CONDIÇÃO MÚLTIPLA
+
+//Pegar informações do sistema de hora e data, usando: new Date()
 
 var agora = new Date();
 var diaSem = agora.getDay();
@@ -12,6 +14,8 @@ var diaSem = agora.getDay();
 5 - Sexta
 6 - Sábado
 */
+
+// No switch é nescessário colocar o "break" em cada case, para o código parar quando chegar no resultado certo.
 
 switch (diaSem) {
   case 0:

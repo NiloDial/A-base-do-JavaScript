@@ -7,6 +7,8 @@
   </head>
   <style></style>
   <body>
+    <!-- HTML com título e inputs da página -->
+
     <h1>Digite o seu país</h1>
     <input type="text" name="pais" id="pais" />
     <input type="button" value="Verificar" onclick="verificar()" />
@@ -14,6 +16,8 @@
     <div id="res">Resultado:</div>
 
     <script>
+      //Função "verificar" que é executada quando o user aperta o botão
+
       function verificar() {
         var vpais = window.document.getElementById("pais");
         var res = window.document.getElementById("res");
@@ -21,6 +25,8 @@
         var valor = vpais.value;
 
         atual.innerHTML = `Sua país é <strong>${valor}.</strong>`;
+
+        //Condição composta dentro da função, que valida se a palavra digitada no input é igual a Brasil
 
         if (valor == "Brasil") {
           res.innerHTML = `Você é Brasileiro.`;

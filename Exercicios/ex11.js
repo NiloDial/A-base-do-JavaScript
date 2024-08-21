@@ -1,4 +1,4 @@
-//Condição alinhada
+//CONDIÇÃO ALINHADA
 
 var idade = 67;
 

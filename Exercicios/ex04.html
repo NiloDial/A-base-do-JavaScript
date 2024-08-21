@@ -6,6 +6,8 @@
     <title>Exercício-01</title>
   </head>
   <style>
+    /* CSS - Estilização do projeto */
+
     body {
       background-color: rgb(61, 61, 61);
       font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
@@ -14,7 +16,16 @@
   </style>
   <body>
     <script>
+      // Variável com um window.prompt(Janela do vavegador com um input de texto)
       var nome = window.prompt("Digite seu nome");
+
+      /*
+      Pega o nome que foi digitado e conta a quantidade de letras.
+      Deixa todas as letras em caixa alta.
+      Deixa todas as letras em caixa baixa.
+      */
+
+      //document.write, tesponsável por escrever algo no HTML
 
       document.write(`Ola! ${nome}, seu nome tem ${nome.length} letras! <br/>`);
       document.write(`Seu nome em maiúsculo fica ${nome.toUpperCase()} <br/>`);

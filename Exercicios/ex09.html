@@ -7,6 +7,8 @@
   </head>
   <style></style>
   <body>
+    <!-- HTML com título e inputs da página -->
+
     <h1>Digite a velocidade do veículo</h1>
     <input type="number" name="num1" id="num1" />
     <input type="button" value="somar" onclick="vel()" />
@@ -14,6 +16,8 @@
     <div id="res">Resultado:</div>
 
     <script>
+      //Função "vel" que é executada quando o user aperta o botão
+
       function vel() {
         var n1 = window.document.getElementById("num1");
         var res = window.document.getElementById("res");
@@ -21,6 +25,8 @@
         var va1 = Number(n1.value);
 
         velo.innerHTML = `Sua velocidade é de <strong>${va1}KM/H.</strong>`;
+
+        //Condição composta dentro da função, que valida se a velocidade ultrapassou o limite
 
         if (va1 >= 60) {
           res.innerHTML = `MULTADO! Você passou do limite de velocidade.`;

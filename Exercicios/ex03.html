@@ -6,6 +6,8 @@
     <title>Exercício-01</title>
   </head>
   <style>
+    /* CSS - Estilização da página */
+
     body {
       background-color: rgb(61, 61, 61);
       font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
@@ -13,14 +15,24 @@
     }
   </style>
   <body>
+    <!-- HTML - Um título e uma parágrafo de texto -->
+
     <h1>Olá mundo!</h1>
     <p>Como foi seu dia?</p>
 
     <script>
+      /*
+      Duas variáveis com um window.prompt(Janela com input de texto) que nesse caso coletam dois números.
+      */
+
+      //Number.parseInt() faz com que o número digitado passe de uma "string" para "number" com valor inteiro
+
       var n1 = Number.parseInt(window.prompt("Digite um número"));
       var n2 = Number.parseInt(window.prompt("Digite outro número"));
 
       var s = n1 + n2;
+
+      //Abre janela de alerta, com o resultado da soma
 
       window.alert("A some é: " + s + "!");
     </script>

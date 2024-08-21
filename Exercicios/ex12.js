@@ -1,4 +1,6 @@
-//Condição alinhada
+//CONDIÇÃO ALINHADA
+
+//Pegar informações do sistema de hora e data, usando: new Date()
 
 var agora = new Date();
 var hora = agora.getHours();
