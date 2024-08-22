@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabuada</title>
+    <link rel="stylesheet" href="ex20-style.css" />
+  </head>
+
+  <!-- <body> Com os elementos da página -->
+  <body>
+    <header>
+      <h1>Tabuada</h1>
+    </header>
+
+    <section id="box">
+      <div>
+        <p>
+          Número
+          <input type="number" name="txtano" id="num" />
+          <!-- <input type="button"> Com a função de clique, que dispara a função "tabuada" -->
+          <input type="button" value="GERAR" onclick="tabuada()" />
+        </p>
+      </div>
+
+      <div id="res">Resposta:</div>
+    </section>
+
+    <footer>
+      <p>&copy; Nilo Dial</p>
+    </footer>
+
+    <script src="ex20-script.js"></script>
+  </body>
+</html>

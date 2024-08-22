@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Análise</title>
+    <link rel="stylesheet" href="ex29-style.css" />
+  </head>
+
+  <!-- <body> Com os elementos da página -->
+  <body>
+    <header>
+      <h1>Análise</h1>
+    </header>
+
+    <section id="box">
+      <div>
+        <p>
+          Número entre 1 e 100
+          <input type="number" name="txtano" id="num" />
+          <!-- <input type="button"> Com a função de clique, que dispara a função "tabuada" -->
+          <input type="button" value="ADICIONAR" onclick="adicionar()" />
+        </p>
+      </div>
+
+      <div>
+        <select name="base" id="basein" size="10"></select>
+        <input type="button" value="FINALIZAR" onclick="finalizar()" />
+      </div>
+      <p id="res"></p>
+    </section>
+
+    <footer>
+      <p>&copy; Nilo Dial</p>
+    </footer>
+
+    <script src="ex29-script.js"></script>
+  </body>
+</html>

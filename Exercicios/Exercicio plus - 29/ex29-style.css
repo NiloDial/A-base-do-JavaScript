@@ -1,0 +1,32 @@
+/* Arquivo style com o CSS, separado do HTML para uma organização melhor */
+
+body {
+  background: rgb(32, 32, 32);
+  font: normal 15pt Arial;
+  color: white;
+}
+
+header {
+  color: white;
+  text-align: center;
+}
+
+section {
+  background: rgb(99, 99, 99);
+  border-radius: 5px;
+  padding: 15px;
+  width: 500px;
+  margin: auto;
+  box-shadow: 3px 3px 10px rgb(0, 0, 0, 0.363);
+}
+
+div {
+  text-align: center;
+  padding-top: 10px;
+}
+
+footer {
+  color: white;
+  text-align: center;
+  font-style: italic;
+}
