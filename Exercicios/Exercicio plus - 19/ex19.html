@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contagem</title>
+    <link rel="stylesheet" href="ex19-style.css" />
+  </head>
+
+  <!-- <body> com evento onload, que dispara a função "carregar" assim que a página carrega -->
+  <body>
+    <header>
+      <h1>Contagem</h1>
+    </header>
+
+    <section id="box">
+      <div id="msg">
+        <p>
+          Ínicio:
+          <input type="number" name="txtano" id="ninicio" />
+        </p>
+
+        <p>
+          Fim:
+          <input type="number" name="txtano" id="nfim" />
+        </p>
+
+        <p>
+          Passo:
+          <input type="number" name="txtano" id="npasso" />
+        </p>
+
+        <p>
+          <input type="button" value="CONTAR" onclick="verificar()" />
+        </p>
+      </div>
+
+      <div id="resposta">Resposta:</div>
+    </section>
+
+    <footer>
+      <p>&copy; Nilo Dial</p>
+    </footer>
+
+    <script src="ex19-script.js"></script>
+  </body>
+</html>
