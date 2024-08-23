@@ -5,8 +5,6 @@ var base = document.getElementById("basein");
 var res = document.getElementById("res");
 var numeros = [];
 
-//var n = Number(n1.value);
-
 function adicionar() {
   res.innerHTML = "";
   if (n1.value.length == 0) {
@@ -31,8 +29,8 @@ function adicionar() {
       }
     }
   }
-  n1.value = "";
-  n1.focus();
+  n1.value = ""; //Limpa o input(n1) automaticamente
+  n1.focus(); //Permanece com o "teclado" dentro do input(n1), mesmo que um valor ja tenha sido digitado
 }
 
 function finalizar() {
@@ -70,5 +68,3 @@ function finalizar() {
   res.innerHTML =
     r1 + "<br>" + r2 + "<br>" + r3 + "<br>" + r4 + "<br>" + r5 + "<br>";
 }
-
-//console.log(numeros);

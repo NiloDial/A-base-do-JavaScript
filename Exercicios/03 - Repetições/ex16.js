@@ -1,4 +1,4 @@
-//Uso da repetição "while"
+//REPETIÇÃO "WHILE"
 //Primeiro testa se "c" é igual ou menor a "6", depois executa.
 
 var c = 1;

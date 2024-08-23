@@ -1,4 +1,4 @@
-//Uso da repetição "for"
+//REPETIÇÃO "FOR"
 //Inicia, testa se "c" é igual ou menor a "6", depois executa.
 
 for (var c = 1; c <= 6; c++) {

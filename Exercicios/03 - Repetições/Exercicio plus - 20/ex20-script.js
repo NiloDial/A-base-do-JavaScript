@@ -1,4 +1,6 @@
 //Arquivo de script
+
+//Gerador de tabuada
 function tabuada() {
   var v = document.getElementById("num");
   var res = document.getElementById("res");
@@ -6,6 +8,7 @@ function tabuada() {
 
   var val = v.value;
 
+  //Valida se foi digitado algum valor no input
   if (val == "") {
     window.alert("Preencha o campo Número");
   } else {
@@ -15,7 +18,6 @@ function tabuada() {
       var soma = c * v1;
       nv += `${v1}X${c}=${soma}` + "<br>";
       res.innerHTML = nv;
-      //res.innerHTML += `${v1}X${c}=${soma}` + "<br>";
     }
   }
 }
